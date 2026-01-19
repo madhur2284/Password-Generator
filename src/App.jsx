@@ -43,12 +43,12 @@ function App() {
         <div className="mr-2 ml-2 flex">
           {openEye? 
           <div className="flex">
-            <input className="bg-cyan-100 rounded-l-lg h-8 px-2 py-0.5 w-lg" name="password" type="text" value={Password} placeholder='Password' readOnly ref={passwordref}></input> <button onClick={fn}><LuEye /></button>
+            <input className="bg-cyan-100 rounded-l-lg h-8 px-2 py-0.5 w-lg relative" name="password" type="text" value={Password} placeholder='Password' readOnly ref={passwordref}></input> <button onClick={fn} className="absolute mt-2.5 ml-120"><LuEye /></button>
           </div>
           :
           <div className="flex">
-            <input className="bg-cyan-100 rounded-l-lg h-8 px-2 py-0.5 w-lg" name="password" type="password" value={Password} placeholder='Password' readOnly ref={passwordref}></input>
-            <button onClick={fn}><LuEyeClosed /></button>
+            <input className="bg-cyan-100 rounded-l-lg h-8 px-2 py-0.5 w-lg relative" name="password" type="password" value={Password} placeholder='Password' readOnly ref={passwordref}></input>
+            <button onClick={fn} className="absolute mt-2.5 ml-120"><LuEyeClosed /></button>
           </div>
           }
           
